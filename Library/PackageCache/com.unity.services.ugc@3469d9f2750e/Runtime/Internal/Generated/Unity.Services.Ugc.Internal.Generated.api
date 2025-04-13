@@ -1,0 +1,286 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace Unity.Services.Ugc.Generated.Http
+{
+    public class DeserializationSettings
+    {
+        public MissingMemberHandling MissingMemberHandling = MissingMemberHandling.Error;
+        public DeserializationSettings() {}
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(JsonObjectConverter))] [UnityEngine.Scripting.Preserve] public interface IDeserializable
+    {
+        public T GetAs<T>(DeserializationSettings deserializationSettings = default(DeserializationSettings));
+        public string GetAsString();
+    }
+
+    public enum MissingMemberHandling
+    {
+        Error = 0,
+        Ignore = 1,
+    }
+}
+
+namespace Unity.Services.Ugc.Generated.Models
+{
+    [System.Runtime.Serialization.DataContract(Name = @"AverageStat")] [UnityEngine.Scripting.Preserve] public class AverageStat
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public double AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public double Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past180Days")] [UnityEngine.Scripting.Preserve] public double Past180Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public double Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past365Days")] [UnityEngine.Scripting.Preserve] public double Past365Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past60Days")] [UnityEngine.Scripting.Preserve] public double Past60Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public double Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past90Days")] [UnityEngine.Scripting.Preserve] public double Past90Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public double PastDay { get; }
+        [UnityEngine.Scripting.Preserve] public AverageStat(double allTime = 0d, double past365Days = 0d, double past180Days = 0d, double past90Days = 0d, double past60Days = 0d, double past30Days = 0d, double past14Days = 0d, double past7Days = 0d, double pastDay = 0d) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentDownloadStatistics")] [UnityEngine.Scripting.Preserve] public class ContentDownloadStatistics
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public int AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public int Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public int Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public int Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public int PastDay { get; }
+        [UnityEngine.Scripting.Preserve] public ContentDownloadStatistics(int allTime = 0, int past30Days = 0, int past14Days = 0, int past7Days = 0, int pastDay = 0) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentDownloadStats")] [UnityEngine.Scripting.Preserve] public class ContentDownloadStats
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"collectedAt")] [UnityEngine.Scripting.Preserve] public System.Nullable<System.DateTime> CollectedAt { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"contentId")] [UnityEngine.Scripting.Preserve] public string ContentId { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"environmentId")] [UnityEngine.Scripting.Preserve] public string EnvironmentId { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past180Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past180Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past365Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past365Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past60Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past60Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past90Days")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> Past90Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public System.Nullable<int> PastDay { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"projectId")] [UnityEngine.Scripting.Preserve] public string ProjectId { get; }
+        [UnityEngine.Scripting.Preserve] public ContentDownloadStats(string projectId = default(string), string environmentId = default(string), string contentId = default(string), System.Nullable<int> allTime = default(System.Nullable<int>), System.Nullable<int> past365Days = default(System.Nullable<int>), System.Nullable<int> past180Days = default(System.Nullable<int>), System.Nullable<int> past90Days = default(System.Nullable<int>), System.Nullable<int> past60Days = default(System.Nullable<int>), System.Nullable<int> past30Days = default(System.Nullable<int>), System.Nullable<int> past14Days = default(System.Nullable<int>), System.Nullable<int> past7Days = default(System.Nullable<int>), System.Nullable<int> pastDay = default(System.Nullable<int>), System.Nullable<System.DateTime> collectedAt = default(System.Nullable<System.DateTime>)) {}
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))] [UnityEngine.Scripting.Preserve] public enum ContentModerationAction
+    {
+        [System.Runtime.Serialization.EnumMember(Value = @"approved")] Approved = 1,
+        [System.Runtime.Serialization.EnumMember(Value = @"rejected")] Rejected = 2,
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentPortalVisitStatistics")] [UnityEngine.Scripting.Preserve] public class ContentPortalVisitStatistics
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public int AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public int Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public int Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public int Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public int PastDay { get; }
+        [UnityEngine.Scripting.Preserve] public ContentPortalVisitStatistics(int allTime = 0, int past30Days = 0, int past14Days = 0, int past7Days = 0, int pastDay = 0) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentRatingStatistics")] [UnityEngine.Scripting.Preserve] public class ContentRatingStatistics
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public double AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past3Months")] [UnityEngine.Scripting.Preserve] public double Past3Months { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past6Months")] [UnityEngine.Scripting.Preserve] public double Past6Months { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastMonth")] [UnityEngine.Scripting.Preserve] public double PastMonth { get; }
+        [UnityEngine.Scripting.Preserve] public ContentRatingStatistics(double allTime = 0d, double past6Months = 0d, double past3Months = 0d, double pastMonth = 0d) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentReportStatistics")] [UnityEngine.Scripting.Preserve] public class ContentReportStatistics
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public int AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public int Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public int Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public int Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public int PastDay { get; }
+        [UnityEngine.Scripting.Preserve] public ContentReportStatistics(int allTime = 0, int past30Days = 0, int past14Days = 0, int past7Days = 0, int pastDay = 0) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ContentStatistics")] [UnityEngine.Scripting.Preserve] public class ContentStatistics
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"downloadsCount")] [UnityEngine.Scripting.Preserve] public CountStat DownloadsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"ratingsAverage")] [UnityEngine.Scripting.Preserve] public AverageStat RatingsAverage { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"ratingsCount")] [UnityEngine.Scripting.Preserve] public CountStat RatingsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportsCount")] [UnityEngine.Scripting.Preserve] public CountStat ReportsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriptionsCount")] [UnityEngine.Scripting.Preserve] public CountStat SubscriptionsCount { get; }
+        [UnityEngine.Scripting.Preserve] public ContentStatistics(AverageStat ratingsAverage = default(AverageStat), CountStat ratingsCount = default(CountStat), CountStat downloadsCount = default(CountStat), CountStat subscriptionsCount = default(CountStat), CountStat reportsCount = default(CountStat)) {}
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))] [UnityEngine.Scripting.Preserve] public enum ContentUploadStatus
+    {
+        [System.Runtime.Serialization.EnumMember(Value = @"failed")] Failed = 3,
+        [System.Runtime.Serialization.EnumMember(Value = @"none")] None = 4,
+        [System.Runtime.Serialization.EnumMember(Value = @"pending")] Pending = 1,
+        [System.Runtime.Serialization.EnumMember(Value = @"success")] Success = 2,
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))] [UnityEngine.Scripting.Preserve] public enum ContentVisibility
+    {
+        [System.Runtime.Serialization.EnumMember(Value = @"hidden")] Hidden = 4,
+        [System.Runtime.Serialization.EnumMember(Value = @"private")] Private = 1,
+        [System.Runtime.Serialization.EnumMember(Value = @"public")] Public = 5,
+        [System.Obsolete(@"Replace with Public")] [System.Runtime.Serialization.EnumMember(Value = @"publicGame")] PublicGame = 2,
+        [System.Obsolete(@"Replace with Public")] [System.Runtime.Serialization.EnumMember(Value = @"publicGlobal")] PublicGlobal = 3,
+        [System.Runtime.Serialization.EnumMember(Value = @"unlisted")] Unlisted = 6,
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"CountStat")] [UnityEngine.Scripting.Preserve] public class CountStat
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public int AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public int Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past180Days")] [UnityEngine.Scripting.Preserve] public int Past180Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public int Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past365Days")] [UnityEngine.Scripting.Preserve] public int Past365Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past60Days")] [UnityEngine.Scripting.Preserve] public int Past60Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public int Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past90Days")] [UnityEngine.Scripting.Preserve] public int Past90Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public int PastDay { get; }
+        [UnityEngine.Scripting.Preserve] public CountStat(int allTime = 0, int past365Days = 0, int past180Days = 0, int past90Days = 0, int past60Days = 0, int past30Days = 0, int past14Days = 0, int past7Days = 0, int pastDay = 0) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"EnvironmentDetailedStatisticsDTO")] [UnityEngine.Scripting.Preserve] public class EnvironmentDetailedStatisticsDTO
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"contentCount")] [UnityEngine.Scripting.Preserve] public int ContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"downloadedContentCount")] [UnityEngine.Scripting.Preserve] public int DownloadedContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportsCount")] [UnityEngine.Scripting.Preserve] public int ReportsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriptionCount")] [UnityEngine.Scripting.Preserve] public int SubscriptionCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"updatedAt")] [UnityEngine.Scripting.Preserve] public System.DateTime UpdatedAt { get; }
+        [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO(int contentCount = 0, int downloadedContentCount = 0, int subscriptionCount = 0, int reportsCount = 0, System.DateTime updatedAt = default(System.DateTime)) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"EnvironmentStatisticsDTO")] [UnityEngine.Scripting.Preserve] public class EnvironmentStatisticsDTO
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"contentCount")] [UnityEngine.Scripting.Preserve] public CountStat ContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"downloadCount")] [UnityEngine.Scripting.Preserve] public CountStat DownloadCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past180Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past180Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past365Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past365Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past60Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past60Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past90Days")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO Past90Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public EnvironmentDetailedStatisticsDTO PastDay { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportCount")] [UnityEngine.Scripting.Preserve] public CountStat ReportCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriptionCount")] [UnityEngine.Scripting.Preserve] public CountStat SubscriptionCount { get; }
+        [UnityEngine.Scripting.Preserve] public EnvironmentStatisticsDTO(EnvironmentDetailedStatisticsDTO allTime = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past365Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past180Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past90Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past60Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past30Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past14Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO past7Days = default(EnvironmentDetailedStatisticsDTO), EnvironmentDetailedStatisticsDTO pastDay = default(EnvironmentDetailedStatisticsDTO), CountStat contentCount = default(CountStat), CountStat downloadCount = default(CountStat), CountStat subscriptionCount = default(CountStat), CountStat reportCount = default(CountStat)) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"FirebaseAuthData")] [UnityEngine.Scripting.Preserve] public class FirebaseAuthData
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"apiKey")] [UnityEngine.Scripting.Preserve] public string ApiKey { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"apple")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Apple { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"authDomain")] [UnityEngine.Scripting.Preserve] public string AuthDomain { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"email")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Email { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"facebook")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Facebook { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = true, Name = @"firebaseEnabled")] [UnityEngine.Scripting.Preserve] public bool FirebaseEnabled { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"google")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Google { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"microsoft")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Microsoft { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"oidc")] [UnityEngine.Scripting.Preserve] public FirebaseCustomAuthProvider Oidc { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"saml")] [UnityEngine.Scripting.Preserve] public FirebaseCustomAuthProvider Saml { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"twitter")] [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider Twitter { get; }
+        [UnityEngine.Scripting.Preserve] public FirebaseAuthData(bool firebaseEnabled = false, string apiKey = default(string), string authDomain = default(string), FirebaseAuthProvider google = default(FirebaseAuthProvider), FirebaseAuthProvider facebook = default(FirebaseAuthProvider), FirebaseAuthProvider apple = default(FirebaseAuthProvider), FirebaseAuthProvider twitter = default(FirebaseAuthProvider), FirebaseAuthProvider microsoft = default(FirebaseAuthProvider), FirebaseAuthProvider email = default(FirebaseAuthProvider), FirebaseCustomAuthProvider saml = default(FirebaseCustomAuthProvider), FirebaseCustomAuthProvider oidc = default(FirebaseCustomAuthProvider)) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"FirebaseAuthProvider")] [UnityEngine.Scripting.Preserve] public class FirebaseAuthProvider
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = true, Name = @"enabled")] [UnityEngine.Scripting.Preserve] public bool Enabled { get; }
+        [UnityEngine.Scripting.Preserve] public FirebaseAuthProvider(bool enabled = false) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"FirebaseCustomAuthProvider")] [UnityEngine.Scripting.Preserve] public class FirebaseCustomAuthProvider
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = true, Name = @"enabled")] [UnityEngine.Scripting.Preserve] public bool Enabled { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"name")] [UnityEngine.Scripting.Preserve] public string Name { get; }
+        [UnityEngine.Scripting.Preserve] public FirebaseCustomAuthProvider(string name = default(string), bool enabled = false) {}
+    }
+
+    public interface IOneOf
+    {
+        public System.Type Type { get; }
+        public object Value { get; }
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))] [UnityEngine.Scripting.Preserve] public enum ModerationStatus
+    {
+        [System.Runtime.Serialization.EnumMember(Value = @"approved")] Approved = 1,
+        [System.Runtime.Serialization.EnumMember(Value = @"needsModeration")] NeedsModeration = 3,
+        [System.Runtime.Serialization.EnumMember(Value = @"rejected")] Rejected = 2,
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ModeratorDetailedStatisticsDTO")] [UnityEngine.Scripting.Preserve] public class ModeratorDetailedStatisticsDTO
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"approvals")] [UnityEngine.Scripting.Preserve] public int Approvals { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"bannedPlayerCount")] [UnityEngine.Scripting.Preserve] public int BannedPlayerCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"rejections")] [UnityEngine.Scripting.Preserve] public int Rejections { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reviews")] [UnityEngine.Scripting.Preserve] public int Reviews { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"updatedAt")] [UnityEngine.Scripting.Preserve] public System.DateTime UpdatedAt { get; }
+        [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO(int reviews = 0, int approvals = 0, int rejections = 0, int bannedPlayerCount = 0, System.DateTime updatedAt = default(System.DateTime)) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"ModeratorStatisticsDTO")] [UnityEngine.Scripting.Preserve] public class ModeratorStatisticsDTO
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"allTime")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO AllTime { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"approvalsCount")] [UnityEngine.Scripting.Preserve] public CountStat ApprovalsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"bannedPlayerCount")] [UnityEngine.Scripting.Preserve] public CountStat BannedPlayerCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past14Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past14Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past180Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past180Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past30Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past30Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past365Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past365Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past60Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past60Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past7Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past7Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"past90Days")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO Past90Days { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"pastDay")] [UnityEngine.Scripting.Preserve] public ModeratorDetailedStatisticsDTO PastDay { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"rejectionsCount")] [UnityEngine.Scripting.Preserve] public CountStat RejectionsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reviewsCount")] [UnityEngine.Scripting.Preserve] public CountStat ReviewsCount { get; }
+        [UnityEngine.Scripting.Preserve] public ModeratorStatisticsDTO(ModeratorDetailedStatisticsDTO allTime = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past365Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past180Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past90Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past60Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past30Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past14Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO past7Days = default(ModeratorDetailedStatisticsDTO), ModeratorDetailedStatisticsDTO pastDay = default(ModeratorDetailedStatisticsDTO), CountStat reviewsCount = default(CountStat), CountStat approvalsCount = default(CountStat), CountStat rejectionsCount = default(CountStat), CountStat bannedPlayerCount = default(CountStat)) {}
+    }
+
+    [System.Runtime.Serialization.DataContract(Name = @"PlayerStatisticsDTO")] [UnityEngine.Scripting.Preserve] public class PlayerStatisticsDTO
+    {
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"approvedContentCount")] [UnityEngine.Scripting.Preserve] public CountStat ApprovedContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"approvedPlayerContentCount")] [UnityEngine.Scripting.Preserve] public int ApprovedPlayerContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"averageContentRating")] [UnityEngine.Scripting.Preserve] public AverageStat AverageContentRating { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"averageContentRatingGiven")] [UnityEngine.Scripting.Preserve] public AverageStat AverageContentRatingGiven { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"averageRatingForPlayerContent")] [UnityEngine.Scripting.Preserve] public double AverageRatingForPlayerContent { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"contentCount")] [UnityEngine.Scripting.Preserve] public CountStat ContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"environmentId")] [UnityEngine.Scripting.Preserve] public string EnvironmentId { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"needsModerationContentCount")] [UnityEngine.Scripting.Preserve] public CountStat NeedsModerationContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"needsModerationPlayerContentCount")] [UnityEngine.Scripting.Preserve] public int NeedsModerationPlayerContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerAverageRating")] [UnityEngine.Scripting.Preserve] public double PlayerAverageRating { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerContentCount")] [UnityEngine.Scripting.Preserve] public int PlayerContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerId")] [UnityEngine.Scripting.Preserve] public string PlayerId { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerRatingCount")] [UnityEngine.Scripting.Preserve] public CountStat PlayerRatingCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerRatings")] [UnityEngine.Scripting.Preserve] public int PlayerRatings { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playersReports")] [UnityEngine.Scripting.Preserve] public int PlayersReports { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"playerSubscriptions")] [UnityEngine.Scripting.Preserve] public int PlayerSubscriptions { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"projectId")] [UnityEngine.Scripting.Preserve] public string ProjectId { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"ratingForPlayerContent")] [UnityEngine.Scripting.Preserve] public int RatingForPlayerContent { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"ratingsCount")] [UnityEngine.Scripting.Preserve] public CountStat RatingsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"rejectedContentCount")] [UnityEngine.Scripting.Preserve] public CountStat RejectedContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"rejectedPlayerContentCount")] [UnityEngine.Scripting.Preserve] public int RejectedPlayerContentCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportForPlayerContent")] [UnityEngine.Scripting.Preserve] public int ReportForPlayerContent { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportsCount")] [UnityEngine.Scripting.Preserve] public CountStat ReportsCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"reportsGivenCount")] [UnityEngine.Scripting.Preserve] public CountStat ReportsGivenCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriberCount")] [UnityEngine.Scripting.Preserve] public CountStat SubscriberCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriptionCount")] [UnityEngine.Scripting.Preserve] public CountStat SubscriptionCount { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"subscriptionForPlayerContent")] [UnityEngine.Scripting.Preserve] public int SubscriptionForPlayerContent { get; }
+        [System.Runtime.Serialization.DataMember(EmitDefaultValue = false, Name = @"updatedAt")] [UnityEngine.Scripting.Preserve] public System.DateTime UpdatedAt { get; }
+        [UnityEngine.Scripting.Preserve] public PlayerStatisticsDTO(string projectId = default(string), string environmentId = default(string), string playerId = default(string), int playerContentCount = 0, int approvedPlayerContentCount = 0, int rejectedPlayerContentCount = 0, int needsModerationPlayerContentCount = 0, int subscriptionForPlayerContent = 0, int ratingForPlayerContent = 0, double averageRatingForPlayerContent = 0d, int reportForPlayerContent = 0, int playerSubscriptions = 0, int playerRatings = 0, double playerAverageRating = 0d, int playersReports = 0, System.DateTime updatedAt = default(System.DateTime), CountStat contentCount = default(CountStat), CountStat approvedContentCount = default(CountStat), CountStat rejectedContentCount = default(CountStat), CountStat needsModerationContentCount = default(CountStat), CountStat subscriptionCount = default(CountStat), CountStat ratingsCount = default(CountStat), AverageStat averageContentRating = default(AverageStat), CountStat reportsCount = default(CountStat), CountStat subscriberCount = default(CountStat), CountStat playerRatingCount = default(CountStat), AverageStat averageContentRatingGiven = default(AverageStat), CountStat reportsGivenCount = default(CountStat)) {}
+    }
+
+    [Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))] [UnityEngine.Scripting.Preserve] public enum Reason
+    {
+        [System.Runtime.Serialization.EnumMember(Value = @"dmcaRequest")] DmcaRequest = 1,
+        [System.Runtime.Serialization.EnumMember(Value = @"illegalOrStolen")] IllegalOrStolen = 4,
+        [System.Runtime.Serialization.EnumMember(Value = @"inappropriate")] Inappropriate = 3,
+        [System.Runtime.Serialization.EnumMember(Value = @"misleading")] Misleading = 5,
+        [System.Runtime.Serialization.EnumMember(Value = @"nonFunctional")] NonFunctional = 2,
+        [System.Runtime.Serialization.EnumMember(Value = @"other")] Other = 6,
+    }
+}

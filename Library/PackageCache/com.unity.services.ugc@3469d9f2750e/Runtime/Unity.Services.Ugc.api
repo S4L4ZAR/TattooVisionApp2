@@ -1,0 +1,379 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace Unity.Services.Ugc
+{
+    public class BaseSearchArgs<T> where T : struct, System.Enum, new()
+    {
+        public System.Collections.Generic.List<string> Filters { get; set; }
+        public bool IncludeTotal { get; set; }
+        public int Limit { get; set; }
+        public int Offset { get; set; }
+        public string Search { get; set; }
+        public BaseSearchArgs() {}
+        public void AddSortBy(T sortBy, bool isDescending);
+    }
+
+    public enum BaseSearchSortBy
+    {
+        CreatedAt = 0,
+        UpdatedAt = 1,
+    }
+
+    public class Content
+    {
+        public string AddVersionId { get; }
+        public Generated.Models.ContentUploadStatus AssetUploadStatus { get; }
+        public System.Nullable<float> AverageRating { get; }
+        public string ContentMd5Hash { get; }
+        public System.DateTime CreatedAt { get; }
+        public string CreatorAccountId { get; }
+        public string CustomId { get; }
+        public System.Nullable<System.DateTime> DeletedAt { get; }
+        public string Description { get; }
+        public System.Collections.Generic.List<Tag> DiscoveryTags { get; }
+        public byte[] DownloadedContent { get; }
+        public byte[] DownloadedThumbnail { get; }
+        public string EnvironmentId { get; }
+        public string Id { get; }
+        public bool IsUserSubscribed { get; }
+        public string Metadata { get; }
+        public string Name { get; }
+        public string ProjectId { get; }
+        public System.Nullable<int> RatingCount { get; }
+        public Generated.Models.ContentStatistics Statistics { get; }
+        public System.Nullable<int> SubscriptionCount { get; }
+        public System.Collections.Generic.List<Tag> Tags { get; }
+        public string ThumbnailMd5Hash { get; }
+        public Generated.Models.ContentUploadStatus ThumbnailUploadStatus { get; }
+        public System.DateTime UpdatedAt { get; }
+        public string Version { get; }
+        public Generated.Models.ContentVisibility Visibility { get; }
+    }
+
+    public enum ContentTrendType
+    {
+        Engaging = 5,
+        MostDownloaded = 1,
+        Newest = 2,
+        Popular = 3,
+        TopRated = 0,
+        Trending = 4,
+    }
+
+    public class ContentUserRating
+    {
+        public string ContentId { get; }
+        public System.DateTime CreatedAt { get; }
+        public string Id { get; }
+        public float Rating { get; }
+        public System.DateTime UpdatedAt { get; }
+        public string UserId { get; }
+    }
+
+    public class ContentVersion
+    {
+        public Generated.Models.ContentUploadStatus AssetUploadStatus { get; }
+        public string ContentId { get; }
+        public string ContentMd5Hash { get; }
+        public System.DateTime CreatedAt { get; }
+        public string Id { get; }
+        public System.Nullable<long> Size { get; }
+        public string ThumbnailMd5Hash { get; }
+        public Generated.Models.ContentUploadStatus ThumbnailUploadStatus { get; }
+        public System.DateTime UpdatedAt { get; }
+    }
+
+    public class CreateContentArgs
+    {
+        public System.IO.Stream Asset { get; set; }
+        public string CustomId { get; set; }
+        public string Description { get; set; }
+        public bool IsPublic { get; set; }
+        public string Metadata { get; set; }
+        public string Name { get; set; }
+        public System.Collections.Generic.List<string> TagsId { get; set; }
+        public System.IO.Stream Thumbnail { get; set; }
+        public CreateContentArgs(string name, string description, System.IO.Stream asset) {}
+    }
+
+    public class CreateRepresentationArgs
+    {
+        public string ContentId { get; set; }
+        public string Metadata { get; set; }
+        public System.Collections.Generic.List<string> Tags { get; set; }
+        public CreateRepresentationArgs(string contentId, System.Collections.Generic.List<string> tags) {}
+    }
+
+    public class DeleteRepresentationArgs
+    {
+        public string ContentId { get; set; }
+        public string RepresentationId { get; set; }
+        public DeleteRepresentationArgs(string contentId, string representationId) {}
+    }
+
+    public class GetContentArgs
+    {
+        public string ContentId { get; set; }
+        public bool DownloadContent { get; set; }
+        public bool DownloadThumbnail { get; set; }
+        public bool IncludeStatistics { get; set; }
+        public GetContentArgs(string contentId) {}
+    }
+
+    public class GetContentsArgs : Unity.Services.Ugc.BaseSearchArgs<SearchContentSortBy>
+    {
+        public System.Collections.Generic.List<string> Tags { get; set; }
+        public GetContentsArgs() {}
+    }
+
+    public class GetContentTrendsArgs
+    {
+        public bool IncludeTotal { get; set; }
+        public bool IsSortByDescending { get; set; }
+        public int Limit { get; set; }
+        public int Offset { get; set; }
+        public ContentTrendType TrendType { get; set; }
+        public GetContentTrendsArgs(ContentTrendType trendType) {}
+    }
+
+    public class GetContentVersionsArgs : Unity.Services.Ugc.BaseSearchArgs<SearchContentVersionsSortBy>
+    {
+        public string ContentId { get; set; }
+        public GetContentVersionsArgs(string contentId) {}
+    }
+
+    public class GetPlayerContentsArgs : Unity.Services.Ugc.BaseSearchArgs<SearchContentSortBy>
+    {
+        public GetPlayerContentsArgs() {}
+    }
+
+    public class GetRepresentationArgs
+    {
+        public string ContentId { get; set; }
+        public bool DownloadRepresentation { get; set; }
+        public string RepresentationId { get; set; }
+        public GetRepresentationArgs(string contentId, string representationId) {}
+    }
+
+    public class GetRepresentationsArgs : Unity.Services.Ugc.BaseSearchArgs<BaseSearchSortBy>
+    {
+        public string ContentId { get; set; }
+        public System.Collections.Generic.List<string> Tags { get; set; }
+        public GetRepresentationsArgs(string contentId) {}
+    }
+
+    public class GetRepresentationVersionsArgs : Unity.Services.Ugc.BaseSearchArgs<SearchRepresentationVersionSortBy>
+    {
+        public string ContentId { get; set; }
+        public string RepresentationId { get; set; }
+        public GetRepresentationVersionsArgs(string contentId, string representationId) {}
+    }
+
+    public class GetSubscriptionsArgs : Unity.Services.Ugc.BaseSearchArgs<SearchSubscriptionSortBy>
+    {
+        public GetSubscriptionsArgs() {}
+    }
+
+    public interface IUgcService
+    {
+        public System.Threading.Tasks.Task<Content> ApproveContentAsync(string contentId);
+        public System.Threading.Tasks.Task<Content> CreateContentAsync(CreateContentArgs createContentArgs);
+        public System.Threading.Tasks.Task<Content> CreateContentVersionAsync(string contentId, System.IO.Stream asset, System.IO.Stream thumbnail = default(System.IO.Stream));
+        public System.Threading.Tasks.Task<Representation> CreateRepresentationAsync(CreateRepresentationArgs createRepresentationArgs);
+        public System.Threading.Tasks.Task<RepresentationVersion> CreateRepresentationVersionAsync(string contentId, string representationId, System.IO.Stream asset);
+        public System.Threading.Tasks.Task<Subscription> CreateSubscriptionAsync(string contentId);
+        public System.Threading.Tasks.Task DeleteContentAsync(string contentId);
+        public System.Threading.Tasks.Task DeleteRepresentationAsync(DeleteRepresentationArgs deleteRepresentationArgs);
+        public System.Threading.Tasks.Task DeleteSubscriptionAsync(string contentId);
+        public System.Threading.Tasks.Task DownloadContentDataAsync(Content content, bool downloadContent, bool downloadThumbnail);
+        public System.Threading.Tasks.Task<Content> GetContentAsync(GetContentArgs getContentArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Content>> GetContentsAsync(GetContentsArgs getContentsArgs = default(GetContentsArgs));
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Content>> GetContentTrendsAsync(GetContentTrendsArgs getContentTrendsArgs = default(GetContentTrendsArgs));
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<ContentVersion>> GetContentVersionsAsync(GetContentVersionsArgs getContentVersionsArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Content>> GetPlayerContentsAsync(GetPlayerContentsArgs getPlayerContentsArgs = default(GetPlayerContentsArgs));
+        public System.Threading.Tasks.Task<Representation> GetRepresentationAsync(GetRepresentationArgs getRepresentationArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Representation>> GetRepresentationsAsync(GetRepresentationsArgs getRepresentationsArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<RepresentationVersion>> GetRepresentationVersionsAsync(GetRepresentationVersionsArgs getRepresentationVersionsArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Subscription>> GetSubscriptionsAsync(GetSubscriptionsArgs getSubscriptionsArgs);
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<Tag>> GetTagsAsync();
+        public System.Threading.Tasks.Task<ContentUserRating> GetUserContentRatingAsync(string contentId);
+        public System.Threading.Tasks.Task<bool> IsSubscribedToAsync(string contentId);
+        public System.Threading.Tasks.Task<Content> RejectContentAsync(string contentId);
+        public System.Threading.Tasks.Task<Content> ReportContentAsync(ReportContentArgs reportContentArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Content>> SearchContentModerationAsync(SearchContentModerationArgs searchContentModerationArgs);
+        public System.Threading.Tasks.Task<Unity.Services.Ugc.PagedResults<Representation>> SearchRepresentationsAsync(SearchRepresentationsArgs searchRepresentationsArgs);
+        public System.Threading.Tasks.Task<ContentUserRating> SubmitUserContentRatingAsync(string contentId, float rating);
+        public System.Threading.Tasks.Task<Content> UpdateContentDetailsAsync(UpdateContentDetailsArgs updateContentDetailsArgs);
+        public System.Threading.Tasks.Task<Representation> UpdateRepresentationAsync(UpdateRepresentationArgs updateRepresentationArgs);
+    }
+
+    public class PagedResults<T>
+    {
+        public int Limit { get; }
+        public int Offset { get; }
+        public System.Collections.Generic.List<T> Results { get; }
+        public int Total { get; }
+        public PagedResults(int offset, int limit, int total, System.Collections.Generic.List<T> results) {}
+    }
+
+    public class ReportContentArgs
+    {
+        public string ContentId { get; set; }
+        public string OtherReason { get; set; }
+        public Generated.Models.Reason ReportReason { get; set; }
+        public ReportContentArgs(string contentId, Generated.Models.Reason reportReason) {}
+    }
+
+    public class Representation
+    {
+        public string ContentId { get; }
+        public System.DateTime CreatedAt { get; }
+        public string CurrentVersion { get; }
+        public byte[] DownloadedContent { get; }
+        public string Id { get; }
+        public string Metadata { get; }
+        public System.Collections.Generic.List<RepresentationTag> Tags { get; }
+        public System.DateTime UpdatedAt { get; }
+    }
+
+    public class RepresentationTag
+    {
+        public string Id { get; }
+        public string Name { get; }
+    }
+
+    public class RepresentationVersion
+    {
+        public System.DateTime CreatedAt { get; }
+        public System.Nullable<System.DateTime> DeletedAt { get; }
+        public string Id { get; }
+        public string Md5Hash { get; }
+        public System.Nullable<long> Size { get; }
+        public System.DateTime UpdatedAt { get; }
+    }
+
+    public class SearchContentModerationArgs : Unity.Services.Ugc.BaseSearchArgs<SearchContentSortBy>
+    {
+        public SearchContentModerationArgs() {}
+    }
+
+    public enum SearchContentSortBy
+    {
+        ContentEnvironmentStatistics_Data_DownloadsCount_AllTime = 9,
+        ContentEnvironmentStatistics_Data_RatingsAverage_AllTime = 7,
+        ContentEnvironmentStatistics_Data_RatingsCount_AllTime = 6,
+        ContentEnvironmentStatistics_Data_SubscriptionsCount_AllTime = 8,
+        CreatedAt = 4,
+        Name = 0,
+        ProjectId = 1,
+        UpdatedAt = 5,
+        Version = 2,
+        Visibility = 3,
+    }
+
+    public enum SearchContentVersionsSortBy
+    {
+        CreatedAt = 1,
+        Size = 0,
+        UpdatedAt = 2,
+    }
+
+    public class SearchRepresentationsArgs : Unity.Services.Ugc.BaseSearchArgs<BaseSearchSortBy>
+    {
+        public System.Collections.Generic.List<string> Tags { get; set; }
+        public SearchRepresentationsArgs(string searchTerm) {}
+    }
+
+    public enum SearchRepresentationVersionSortBy
+    {
+        CreatedAt = 1,
+        Size = 0,
+        UpdatedAt = 2,
+    }
+
+    public enum SearchSubscriptionSortBy
+    {
+        CreatedAt = 0,
+        UpdatedAt = 1,
+    }
+
+    public class Subscription
+    {
+        public Content Content { get; }
+        public System.DateTime CreatedAt { get; }
+        public System.Nullable<System.DateTime> DeletedAt { get; }
+        public string Id { get; }
+        public string PlayerId { get; }
+        public System.DateTime UpdatedAt { get; }
+    }
+
+    public class Tag
+    {
+        public string Id { get; }
+        public string Name { get; }
+    }
+
+    public static class UgcErrorCodes
+    {
+        public static readonly int ContentHidden = 22011;
+        public static readonly int ContentNotFound = 22009;
+        public static readonly int ContentNotRated = 22016;
+        public static readonly int ContentUnauthorized = 22010;
+        public static readonly int InvalidStream = 22001;
+        public static readonly int InvalidTagAssignment = 22015;
+        public static readonly int InvalidTagName = 22014;
+        public static readonly int InvalidTagOperation = 22013;
+        public static readonly int MinValue = 22000;
+        public static readonly int NullResults = 22003;
+        public static readonly int PreconditionFailed = 22004;
+        public static readonly int ProjectHidden = 22007;
+        public static readonly int ProjectInactive = 22008;
+        public static readonly int RepresentationNotFound = 22012;
+        public static readonly int SubscriptionNotFound = 22018;
+        public static readonly int Unauthorized = 22002;
+        public static readonly int UploadContentCanceled = 22006;
+        public static readonly int UploadContentFailed = 22005;
+        public static readonly int UserAlreadySubscribed = 22017;
+    }
+
+    public class UgcException : Unity.Services.Core.RequestFailedException
+    {
+    }
+
+    public static class UgcService
+    {
+        public static IUgcService Instance { get; }
+    }
+
+    public class UpdateContentDetailsArgs
+    {
+        public string ContentId { get; set; }
+        public string CustomId { get; set; }
+        public string Description { get; set; }
+        public bool IsPublic { get; set; }
+        public string Metadata { get; set; }
+        public string Name { get; set; }
+        public System.Collections.Generic.List<string> TagsId { get; set; }
+        public string Version { get; set; }
+        public UpdateContentDetailsArgs(string contentId, string name, string description, bool isPublic, System.Collections.Generic.List<string> tagsId) {}
+    }
+
+    public class UpdateRepresentationArgs
+    {
+        public string ContentId { get; set; }
+        public string Metadata { get; set; }
+        public string RepresentationId { get; set; }
+        public System.Collections.Generic.List<string> Tags { get; set; }
+        public string Version { get; set; }
+        public UpdateRepresentationArgs(string contentId, string representationId, System.Collections.Generic.List<string> tags, string version) {}
+    }
+}
+
+namespace Unity.Services.Ugc.Internal
+{
+    public static class UgcServiceSdkUtils
+    {
+        public static void SetBasePath(string path);
+    }
+}
